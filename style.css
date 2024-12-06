@@ -1,0 +1,413 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lobster&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Saira+Stencil+One&display=swap');
+
+
+*{
+    margin: 0;
+    font-family: "Poppins";
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 30px;
+    align-items: center;
+
+}
+.img{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+.img img{
+    width: 90px;
+    height: 90px;
+}
+
+.header ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    font-size: 25px;
+    
+}
+li:hover{
+    color: dodgerblue;
+    border-bottom: 5px solid dodgerblue;
+}
+.btn1{
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    font-size: 20px;
+}
+.btn1:hover{
+    border: 4px solid gold;
+    background: none;
+    color: dodgerblue;
+
+}
+.header i{
+    display: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-width:600px) {
+    .header ul{
+        display: none;
+    }
+    .header{
+        margin: 10px ;
+    }
+    .btn1{
+        display: none;
+    }
+    .header h1{
+        font-size: 18px;
+    }
+    .header i{
+        display: inline;
+        font-size: 20px;
+    }
+    
+}
+
+
+/* about */
+
+.Home{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: dodgerblue;
+    color: white;
+    align-items: center;
+}
+.Home img{
+    width: 500px;
+    height: 500px;
+    border-radius: 20px;
+    border: 10px solid white;
+    padding: 10px;
+    animation: img;
+    animation-duration: 3s;
+    
+}
+@keyframes img{
+    form{
+        margin-right: 100px;
+    }
+    to{
+        margin-right: 100px;
+    }
+}
+.left{
+    width: 600px;
+    animation: left;
+    animation-duration: 3s;
+    
+}
+
+@keyframes left{
+    form{
+        padding-left: 0px;
+    }
+    to{
+        padding-left: 50px;
+    }
+}
+
+.left h1{
+    font-size: 60px;
+    font-weight: bold;
+    animation-name: h1;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes h1{
+    form{
+        color: white;
+    }
+    to{
+        color: black ;
+    }
+
+}
+.left p{
+    padding-top: 40px;
+    font-size: 20px;
+    color:white;
+}
+.btn{
+    padding: 10px 20px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
+    color:dodgerblue;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.btn:hover{
+    color:dodgerblue;
+    border: solid gold 5px;
+}
+@media screen and (max-width:600px){
+    .Home{
+        flex-direction: column;
+        
+    }
+    .left{
+        width: 300px;
+
+        margin-left: 30px;
+    }
+    .left h1{
+        font-size: 30px;
+    }
+    .left p{
+        font-size: 20px;
+    }
+    .Home img{
+        margin-top: 20px;
+        width: 300px;
+        height: 300px;
+    }
+    @keyframes img {
+        form{
+            margin-left: 0px;
+        }
+        to{
+            margin-left: 50px;
+        }
+
+        
+    }
+}
+/* about */
+.about img{
+    width: 400px;
+    height: 450px;
+    border-radius: 10px;
+    border: solid 3px black;
+    padding: 10px;
+}
+.about{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 30px 0;
+    
+}
+.all{
+    display: flex;
+    gap: 10px;
+   gap: 20px;
+   align-items: center;
+   margin: 20px 0;
+}
+.all h3{
+    color: dodgerblue;
+}
+.L h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+.L{
+    width: 700px;
+}
+.all h6{
+    font-size: 13px;
+}
+.E{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.BT{
+    padding: 8px 50px;
+    background-color: dodgerblue;
+    color:white;
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+.BTn{
+    padding: 8px 50px;
+    background-color: black;
+    margin-left: 20px;
+    color:white;
+    border: none;
+    border-radius: 8px;
+
+}
+
+@media screen and (max-width:600px) {
+    .about{
+        flex-direction: column;
+     align-items: center;
+    }
+    .L{
+        width: 373px;
+        margin-left: 20px;
+    }
+
+    .E{
+        flex-direction: column;
+    }
+    .about img{
+        width: 300px;
+        height: 300px;
+    }
+  .L h2{
+    font-size:17px;
+  }
+}
+/*  */
+
+.ser{
+    background-color: dodgerblue;
+    width: 250px; 
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: white;
+    position: relative;
+    margin-bottom: 30px;
+    
+}
+.ser img{
+    border-radius: 8px;
+    margin-top: 10px;
+    width: 200px;
+    height: 190px;
+}
+
+.ser h6{
+    font-size: 15px;
+    padding: 10px 0;
+}
+.ser i{
+    font-size: 25px;
+ 
+    padding-left: 20px;
+    margin-right: 10px;
+
+}
+.box{
+    position: absolute;
+    background-color: gold;
+    color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: -20px;
+    top: -25px;
+    animation-name: box;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes box{
+    form{
+        background-color: gold;
+    }
+    to{
+        background-color: black;
+        color: white;
+    }
+}
+
+.services{
+display: grid;
+grid-template-columns: 300px 300px 300px;
+justify-content: center;
+gap: 20px;
+}
+#project{
+    background-color: aliceblue;
+}
+.pro{
+    text-align: center;
+    margin-top: 20px;
+}
+.pro p{
+    padding: 20px 0;
+}
+.pro h1{
+    padding-top: 10px;
+    font-size: 50px;
+    animation-name: n;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes n{
+    form{
+        color: black;
+    }
+    to{
+        color: dodgerblue;
+    }
+}
+
+@media screen and (max-width:600px){
+    .services{
+        flex-direction: column;
+        grid-template-columns: 300px;
+    }
+    
+}
+/*  */
+
+.skil img{
+width: 80px;
+height: 80px;
+border-radius: 5px;
+padding-left: 10px;
+}
+.skill{
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    gap: 30px;
+    justify-content: center;
+    
+}
+
+.skil{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background-color: dodgerblue;
+    width: 300px;
+    height: 100px;
+    border-radius: 5px;
+}
+.skil h4{
+    font-size: 18px;
+    color: black;
+}
+.skil:hover{
+    background-color: gold;
+    color: white;
+}
+
+@media screen and (max-width:600px){
+    .skill{
+        flex-direction: column;
+        grid-template-columns: 300px;
+    }
+    
+}
+
+.footer{
+    background-color: rgb(112, 174, 236);
+    color: white;
+    height: 100px;
+    margin-top: 50px;
+    text-align: center;
+    padding-top: 40px;
+}
+
